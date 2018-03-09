@@ -46,7 +46,7 @@ function insertData(arr) {
 		let valueArr = columns.map(column => item[column]);
 		values.push(valueArr);
 	})
-	let sql = "INSERT INTO `data` ("+columns.join(",")+") VALUES ?;";
+	let sql = "REPLACE INTO `data` ("+columns.join(",")+") VALUES ?;";
 	db.query(sql, [values]).then(res => {
 		console.log(`新增了${res.affectedRows}行数据`)
 	})
