@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lodaData": "node loadData.js",
     "dev": "supervisor --inspect index",
+    "start": "NODE_ENV=production pm2 start index.js --name 'koa2-joke-api'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

@@ -15,7 +15,7 @@ cd koa2-joke-api
 
 npm install
 
-node loadData #初始化数据
+npm run loadData #初始化数据
 
 npm run dev # 访问http://localhost:3000
 ```
